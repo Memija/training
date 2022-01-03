@@ -22,7 +22,9 @@ export class NavigationComponent implements OnInit {
    */
   public homeRouteValue: string;
 
-  constructor() { }
+  constructor() {
+    // This is intentional
+  }
 
   ngOnInit(): void {
     this.homeRouteName = configuration.route.name.home;

@@ -23,7 +23,9 @@ export class FooterComponent implements OnInit {
    */
   public year: number;
 
-  constructor() { }
+  constructor() {
+    // This is intentional
+  }
 
   ngOnInit(): void {
     this.version = configuration.version;

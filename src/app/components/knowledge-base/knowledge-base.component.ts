@@ -32,7 +32,9 @@ export class KnowledgeBaseComponent implements OnInit {
    */
   public shouldRepositoriesBeShown: boolean;
 
-  constructor() { }
+  constructor() {
+    // This is intentional
+  }
 
   ngOnInit(): void {
     this.gists = language.knowledgeBase.gists;

@@ -8,6 +8,7 @@
   <div *ngFor='let gitHubGist of gitHubGists | gitHubGistDescriptionPipe: searchTerm.value'>
     <a
       href='{{gitHubGist.html_url}}'
+      rel='noopener'
       target='_blank'>
       <i
         aria-hidden='true'

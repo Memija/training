@@ -4,6 +4,9 @@ const path = require('path');
 
 const app = express();
 
+//Disclosing fingerprints from web application technologies is security-sensitive
+app.disable("x-powered-by");
+
 app.use(compression());
 app.use(express.static(__dirname + '/dist/training/'));
 

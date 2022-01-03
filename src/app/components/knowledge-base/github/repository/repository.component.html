@@ -8,6 +8,7 @@
   <div *ngFor='let gitHubRepository of gitHubRepositories | gitHubRepositoryNamePipe: searchTerm.value'>
     <a
       href='{{gitHubRepository.html_url}}'
+      rel='noopener'
       target='_blank'>
       <i
         aria-hidden='true'
